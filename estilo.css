@@ -1,4 +1,4 @@
-#consola {
+/*#consola {
     align-items: center;
     font-family : 'Oswald', sans-serif;
     height: 240px;
@@ -9,18 +9,16 @@
     background-color: black;
     color: blanchedalmond;
     
-  }
+  }*/
 
-#consola > h1 {
-    margin-left: 3%;
+body {
+    background-color: white;
+    padding: 20px;
 }
 
-#consola > p {
-    margin-left: 3%;
-    position: relative;
-    bottom: -100px;
-}
-
-#contenedor {
-    padding-top: 2.5%;
+.consola {
+    background-color: rgb(31, 31, 31);
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 10fr 1fr;
 }
