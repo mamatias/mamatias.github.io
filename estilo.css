@@ -19,6 +19,26 @@ body {
 .consola {
     background-color: rgb(31, 31, 31);
     display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 10fr 1fr;
+    width: 100% ;
+    grid-template-columns: 15px auto 15px;
+    border-radius: 15px;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 60px);
 }
+
+#centro {
+    display: grid;
+    grid-template-rows: 15px auto 15px;
+}
+
+#pantalla {
+    background-color: rgb(7, 7, 7);
+}
+
+/*
+.celda {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+*/
