@@ -12,18 +12,23 @@
   }*/
 
 body {
-    background-color: white;
+    font-family: 'Nova Mono', monospace;
     padding: 20px;
+    margin: 0;
 }
 
-.consola {
-    background-color: rgb(31, 31, 31);
-    display: grid;
-    width: 100% ;
-    grid-template-columns: 15px auto 15px;
-    border-radius: 15px;
-    width: calc(100vw - 60px);
-    height: calc(100vh - 60px);
+.console {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid white;
+    background-color: rgb(22, 48, 23);
+    color: yellowgreen;
+}
+
+#inputtxt {
+    width: auto;
+    height: auto;
 }
 
 #centro {
