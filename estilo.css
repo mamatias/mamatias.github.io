@@ -1,26 +1,36 @@
-#consola {
-    align-items: center;
-    font-family : 'Oswald', sans-serif;
-    height: 240px;
-    width: 540px;
-    margin: auto;
-    border: 30px solid #181818;
-    border-radius: 30px;
-    background-color: black;
-    color: blanchedalmond;
-    
-  }
-
-#consola > h1 {
-    margin-left: 3%;
+body {
+    font-family: 'Nova Mono', monospace;
+    padding: 20px;
+    margin: 0;
+    background: black;
 }
 
-#consola > p {
-    margin-left: 3%;
-    position: relative;
-    bottom: -100px;
+.console {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*border: 1px solid white;*/
+    background-color: rgb(12, 12, 12);
+    color: rgb(243, 108, 153);
 }
 
-#contenedor {
-    padding-top: 2.5%;
+.console-line {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#wrapper {
+    overflow-y: scroll;
+}
+
+#history {
+    font-size: small;
+    flex-grow: 1;
+}
+
+#inputtxt {
+    font-size: small;
+    padding-left: 0.2em;
+    caret-color: yellow;
+    height: 1.5em;
 }
