@@ -1,16 +1,31 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Nova Mono', monospace;
-    padding: 20px;
-    margin: 0;
+    padding: 0%;
+    margin: 25px;
     background: black;
+    height: 90%;
+}
+
+#wrapper {
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: rgb(12, 12, 12);
+    border: 1px solid rgb(61, 15, 33);
+    border-radius: 0px;
+    padding-left: 0.25em;
 }
 
 .console {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /*border: 1px solid white;*/
-    background-color: rgb(12, 12, 12);
+    /*border: 1px solid white;
+    background-color: rgb(12, 12, 12);*/
     color: rgb(243, 108, 153);
 }
 
@@ -19,18 +34,19 @@ body {
     flex-wrap: wrap;
 }
 
-#wrapper {
-    overflow-y: scroll;
-}
-
 #history {
     font-size: small;
     flex-grow: 1;
 }
 
 #inputtxt {
+    flex-direction: row;
+    flex-wrap: wrap;
     font-size: small;
     padding-left: 0.2em;
     caret-color: yellow;
     height: 1.5em;
+    /*padding-right: 1em;*/
+    min-height: 1em;
+    min-width: 1em;
 }
