@@ -1,3 +1,5 @@
+import {testCmds} from './cmds.js';
+
 // Helper for new lines on the history side...
 function newLine(text) {
     var line = document.createElement('div');
@@ -38,22 +40,22 @@ window.onload = function() {
     document.getElementById('wrapper').appendChild(console2);
 
     // Input part
-    var console2 = document.createElement('span');
-    console2.className = 'console';
-    console2.id = 'inputtxt';
-    //console2.type = 'text';
-    console2.contentEditable = true;
-    //console2.size = 5;
-    console2.spellcheck = false;
-    console2.innerText = 'root@trs>';
-    console2.addEventListener('input', inputListener);
-    console2.addEventListener('keypress', function(e){
+    var console3 = document.createElement('span');
+    console3.className = 'console';
+    console3.id = 'inputtxt';
+    //console3.type = 'text';
+    console3.contentEditable = true;
+    //console3.size = 5;
+    console3.spellcheck = false;
+    console3.innerText = 'root@trs>';
+    console3.addEventListener('input', inputListener);
+    console3.addEventListener('keypress', function(e){
         if(e.key === 'Enter'){
             e.preventDefault();
             introListener();
         }
     });
-    document.getElementById('wrapper').appendChild(console2);
+    document.getElementById('wrapper').appendChild(console3);
 
     // Presentation
     newLine('<b>Terminal Resume System</b> (@trs)<br>');
@@ -67,7 +69,7 @@ function inputListener() {
     var len = 30;
     var c2 = document.getElementById('inputtxt');
     var rerender = false;
-    itxt = c2.innerText;
+    var itxt = c2.innerText;
     //chr1 = itxt.substring(itxt.length-2,itxt.length-1);
     //chr2 = itxt.substring(itxt.length-1,itxt.length);
     //console.log('['+chr1+'] -- <'+chr1.charCodeAt(0)+'>');
@@ -108,10 +110,31 @@ function inputListener() {
 function introListener(){
     var c2 = document.getElementById('inputtxt');
     var c3 = document.getElementById('wrapper');
-    itxt = c2.innerText;
+    var itxt = c2.innerText;
     c2.innerText = 'root@trs>';
     placeCaretAtEnd(c2);
     newLine('<i>'+itxt+'</i><br>');
-    console.log('enter...');
+    //console.log('enter...');
+    var cmdstr = itxt.replace('root@trs>', '');
+    understandCommand(cmdstr);
     c3.scrollBy(0,100);
+    console.log(testCmds);
+    testCmds();
+}
+
+// Comands procesing function
+function understandCommand(cmd){
+    if(cmd == 'clear'){
+        c_clear();
+    }
+    else {
+        newLine('<i>Command [['+cmd+']] not found<br><strong>help</strong> for mor info</i><br>');
+    }
+}
+
+// CLEAR FUNCTION
+function c_clear(){
+    console.log('Comando clear...');
+    var obj = document.getElementById('history');
+    obj.innerText = '';
 }
