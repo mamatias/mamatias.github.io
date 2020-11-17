@@ -1,4 +1,4 @@
-import {testCmds} from './cmds.js';
+import {testCmds, understandCommand} from './cmds.js';
 
 // Helper for new lines on the history side...
 function newLine(text) {
@@ -118,23 +118,4 @@ function introListener(){
     var cmdstr = itxt.replace('root@trs>', '');
     understandCommand(cmdstr);
     c3.scrollBy(0,100);
-    console.log(testCmds);
-    testCmds();
-}
-
-// Comands procesing function
-function understandCommand(cmd){
-    if(cmd == 'clear'){
-        c_clear();
-    }
-    else {
-        newLine('<i>Command [['+cmd+']] not found<br><strong>help</strong> for mor info</i><br>');
-    }
-}
-
-// CLEAR FUNCTION
-function c_clear(){
-    console.log('Comando clear...');
-    var obj = document.getElementById('history');
-    obj.innerText = '';
 }
