@@ -18,7 +18,22 @@ export function understandCommand(cmd){
         newLine('<br>');
     }
     else if(cmd == 'ui'){
-        newLine('<i>The UI is not ready, but it will... <br><strong>help</strong> for more info</i><br>');
+        newLine('<i>Loading UI...<br>');
+        setTimeout(
+            function(){
+                window.open('/ui/', '_self');
+            },
+            3000
+        );
+    }
+    else if(cmd == 'aws1'){
+        newLine('<i>Loading AWS CONCEPT 01...<br>');
+        setTimeout(
+            function(){
+                window.open('/aws_01/', '_self');
+            },
+            3000
+        );
     }
     else if(cmd == 'help'){
         newLine(' ');
