@@ -18,15 +18,32 @@ export function understandCommand(cmd){
         newLine('<br>');
     }
     else if(cmd == 'ui'){
-        newLine('<i>The UI is not ready, but it will... <br><strong>help</strong> for more info</i><br>');
+        newLine('<i>Loading UI...<br>');
+        setTimeout(
+            function(){
+                window.open('/ui/', '_self');
+            },
+            3000
+        );
+    }
+    else if(cmd == 'aws1'){
+        newLine('<i>Loading AWS CONCEPT 01...<br>');
+        setTimeout(
+            function(){
+                window.open('/aws_01/', '_self');
+            },
+            3000
+        );
     }
     else if(cmd == 'help'){
         newLine(' ');
         newLine('<strong>TRS help</strong>');
         newLine('<i>This are the commands available:</i>');
-        newLine('<i>help</i>');
-        newLine('<i>clear</i>');
-        newLine('<i>resume</i>');
+        newLine('<i>help ...............for help... ja!</i>');
+        newLine('<i>clear ..............for clear te screen</i>');
+        newLine('<i>resume .............for my personal resume</i>');
+        newLine('<i>ui .................for the nice looking version</i>');
+        newLine('<i>aws1 ...............Serverless lab 01</i>');
     }
     else {
         newLine('<i>Command [['+cmd+']] not found<br><strong>help</strong> for more info</i><br>');
