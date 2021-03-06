@@ -26,6 +26,15 @@ export function understandCommand(cmd){
             3000
         );
     }
+    else if(cmd == 'd3'){
+        newLine('<i>Loading D3 playground...<br>');
+        setTimeout(
+            function(){
+                window.open('/d3/', '_self');
+            },
+            3000
+        );
+    }
     else if(cmd == 'aws1'){
         newLine('<i>Loading AWS CONCEPT 01...<br>');
         setTimeout(
@@ -43,6 +52,7 @@ export function understandCommand(cmd){
         newLine('<i>clear ..............for clear te screen</i>');
         newLine('<i>resume .............for my personal resume</i>');
         newLine('<i>ui .................for the nice looking version</i>');
+        newLine('<i>d3 .................D3 (data driven documents) experiments</i>');
         newLine('<i>aws1 ...............Serverless lab 01</i>');
     }
     else {
