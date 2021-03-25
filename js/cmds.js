@@ -10,6 +10,9 @@ export function understandCommand(cmd){
     else if(cmd == 'ls'){
         newLine('<i>Ja! ...This is not a real terminal. <br><strong>help</strong> for more info</i><br>');
     }
+    else if(cmd == 'echo'){
+        newLine(cmd);
+    }
     else if(cmd == 'resume'){
         newLine('<br>');
         newLine('<strong color="red">MATIAS TORRES RISSO - ELECTRICAL ENGINEER</strong>');
@@ -54,6 +57,7 @@ export function understandCommand(cmd){
         newLine('<i>ui .................for the nice looking version</i>');
         newLine('<i>d3 .................D3 (data driven documents) experiments</i>');
         newLine('<i>aws1 ...............Serverless lab 01</i>');
+        newLine('<i>echo ...............Echo ja...</i>');
     }
     else {
         newLine('<i>Command [['+cmd+']] not found<br><strong>help</strong> for more info</i><br>');
