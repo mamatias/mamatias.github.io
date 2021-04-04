@@ -47,6 +47,15 @@ export function understandCommand(cmd){
             3000
         );
     }
+    else if(cmd == 'tictactoe'){
+        newLine('<i>Loading AWS CONCEPT 01...<br>');
+        setTimeout(
+            function(){
+                window.open('/tictactoe/', '_self');
+            },
+            3000
+        );
+    }
     else if(cmd == 'help'){
         newLine(' ');
         newLine('<strong>TRS help</strong>');
@@ -58,6 +67,7 @@ export function understandCommand(cmd){
         newLine('<i>d3 .................D3 (data driven documents) experiments</i>');
         newLine('<i>aws1 ...............Serverless lab 01</i>');
         newLine('<i>echo ...............Echo ja...</i>');
+        newLine('<i>tictactoe ..........A very sophisticate </i>');
     }
     else {
         newLine('<i>Command [['+cmd+']] not found<br><strong>help</strong> for more info</i><br>');
