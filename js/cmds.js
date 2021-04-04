@@ -48,7 +48,7 @@ export function understandCommand(cmd){
         );
     }
     else if(cmd == 'tictactoe'){
-        newLine('<i>Loading AWS CONCEPT 01...<br>');
+        newLine('<i>Loading tic tac toe game...<br>');
         setTimeout(
             function(){
                 window.open('/tictactoe/', '_self');
