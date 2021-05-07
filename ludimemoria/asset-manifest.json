@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ludimemoria/static/css/main.2f6d1885.chunk.css",
+    "main.js": "/ludimemoria/static/js/main.08118420.chunk.js",
+    "main.js.map": "/ludimemoria/static/js/main.08118420.chunk.js.map",
+    "runtime-main.js": "/ludimemoria/static/js/runtime-main.e185af56.js",
+    "runtime-main.js.map": "/ludimemoria/static/js/runtime-main.e185af56.js.map",
+    "static/js/2.06e984a2.chunk.js": "/ludimemoria/static/js/2.06e984a2.chunk.js",
+    "static/js/2.06e984a2.chunk.js.map": "/ludimemoria/static/js/2.06e984a2.chunk.js.map",
+    "index.html": "/ludimemoria/index.html",
+    "static/css/main.2f6d1885.chunk.css.map": "/ludimemoria/static/css/main.2f6d1885.chunk.css.map",
+    "static/js/2.06e984a2.chunk.js.LICENSE.txt": "/ludimemoria/static/js/2.06e984a2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e185af56.js",
+    "static/js/2.06e984a2.chunk.js",
+    "static/css/main.2f6d1885.chunk.css",
+    "static/js/main.08118420.chunk.js"
+  ]
+}
