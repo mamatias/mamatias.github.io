@@ -13,36 +13,11 @@ export function understandCommand(cmd){
     else if(cmd == 'echo'){
         newLine(cmd);
     }
-    else if(cmd == 'resume'){
-        newLine('<br>');
-        newLine('<strong color="red">MATIAS TORRES RISSO - ELECTRICAL ENGINEER</strong>');
-        newLine('<br>');
-        newLine('<i>hi, my name is Matías and here Im.</i>');
-        newLine('<br>');
-    }
-    else if(cmd == 'ui'){
-        newLine('<i>Loading UI...<br>');
+    else if(cmd == 'blog'){
+        newLine('<i>Loading blog...<br>');
         setTimeout(
             function(){
-                window.open('/ui/', '_self');
-            },
-            3000
-        );
-    }
-    else if(cmd == 'd3'){
-        newLine('<i>Loading D3 playground...<br>');
-        setTimeout(
-            function(){
-                window.open('/d3/', '_self');
-            },
-            3000
-        );
-    }
-    else if(cmd == 'aws1'){
-        newLine('<i>Loading AWS CONCEPT 01...<br>');
-        setTimeout(
-            function(){
-                window.open('/aws_01/', '_self');
+                window.open('/blog/', '_self');
             },
             3000
         );
@@ -62,12 +37,9 @@ export function understandCommand(cmd){
         newLine('<i>This are the commands available:</i>');
         newLine('<i>help ...............for help... ja!</i>');
         newLine('<i>clear ..............for clear te screen</i>');
-        newLine('<i>resume .............for my personal resume</i>');
-        newLine('<i>ui .................for the nice looking version</i>');
-        newLine('<i>d3 .................D3 (data driven documents) experiments</i>');
-        newLine('<i>aws1 ...............Serverless lab 01</i>');
         newLine('<i>echo ...............Echo ja...</i>');
-        newLine('<i>tictactoe ..........A very sophisticate </i>');
+        newLine('<i>blog ...............Memes.</i>');
+        newLine('<i>tictactoe ..........A very sophisticate futuristic game</i>');
     }
     else {
         newLine('<i>Command [['+cmd+']] not found<br><strong>help</strong> for more info</i><br>');
