@@ -19,14 +19,17 @@ Creando el proyecto&amp;nbsp;¶ Partamos creando un directorio y en el agregarem
     </item>
     
     <item>
-      <title>About</title>
+      <title>Matías</title>
       <link>https://mamatias.github.io/blog/about/</link>
-      <pubDate>Tue, 13 Feb 2018 13:42:49 -0500</pubDate>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 -0300</pubDate>
       
       <guid>https://mamatias.github.io/blog/about/</guid>
-      <description>Hello, I&amp;rsquo;m Sam. I&amp;rsquo;m a theme for Hugo. I&amp;rsquo;m an extremely customizable, content-focused theme that lets you showcase your work your way. I&amp;rsquo;m open source on GitHub.
-I have slick minimalist templates for list pages (such as a list of blog posts) and single pages (a page to read one blog post). You can use tags on your content, and view content by tags.
-I also have a simple responsive gallery feature.</description>
+      <description>Hola, me llamo Matías y soy de Chile. Soy ingeniero y me dedico al control automático.
+Y aunque mi formación teorica es en electricidad, mi pasión es la programación y el desarrollo.
+Tengo conocimientos en:
+ Bases de datos (Oracle, sqlserver y MySQL). Python Javascript HTML CSS  Además tengo ciertas nociones en:
+ React FastAPI  Si te interesa hablar conmigo, puedes hacerlo en
+ matiastorresrisso (at) gmail (dot) com github  </description>
     </item>
     
   </channel>
