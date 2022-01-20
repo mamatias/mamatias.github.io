@@ -6,7 +6,25 @@
     <description>Recent content on matias torres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://mamatias.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://mamatias.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Portafolio de desarrollo</title>
+      <link>https://mamatias.github.io/blog/portfolio/cc/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 -0300</pubDate>
+      
+      <guid>https://mamatias.github.io/blog/portfolio/cc/</guid>
+      <description>&amp;hellip; Trabajos y demostraciones en desarrollo &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Portafolio de ingeniero eléctrico</title>
+      <link>https://mamatias.github.io/blog/portfolio/el/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 -0300</pubDate>
+      
+      <guid>https://mamatias.github.io/blog/portfolio/el/</guid>
+      <description>&amp;hellip; Trabajos y demostraciones en ingeniería eléctrica &amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Genera tu sitio estático con Hugo</title>
       <link>https://mamatias.github.io/blog/posts/how2hugo/</link>
@@ -29,7 +47,7 @@ Y aunque mi formación teorica es en electricidad, mi pasión es la programació
 Tengo conocimientos en:
  Bases de datos (Oracle, sqlserver y MySQL). Python Javascript HTML CSS  Además tengo ciertas nociones en:
  React FastAPI  Si te interesa hablar conmigo, puedes hacerlo en
- matiastorresrisso (at) gmail (dot) com github  </description>
+ matiastorresrisso (at) gmail (dot) com github  Puedes acceder y dar una pequeña revisión a mis trabajos en las siguientes</description>
     </item>
     
   </channel>
